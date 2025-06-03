@@ -45,6 +45,7 @@ useIntersectionObserver(sectionRef, () => {
         /> -->
         <PrismicImage
           v-if="mediaType(item) === 'image'" :field="item.image"
+          class="pointer-events-none select-none"
           ring="1.5 neutral-400" aspect="1.39 md:1.48 lg:initial" rounded-6 object-cover shadow
         />
         <div
