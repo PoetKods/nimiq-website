@@ -18,6 +18,8 @@ export default defineConfig({
     ['bg-purple-to-blue', 'bg-gradient-fn-to-b bg-gradient-fn-from-#3d4383 bg-gradient-fn-to-#0582CA bg-gradient-fn-ease'],
     ['bg-blue-to-darkerblue', 'bg-gradient-fn-to-b bg-gradient-fn-from-#0582CA bg-gradient-fn-to-#17182a bg-gradient-fn-ease'],
     [/^nq-grid-(\d+)$/, ([, d]) => `grid cols-[repeat(auto-fit,min(calc(100vw-64px),${d}px))] gap-32 md:gap-40 lg:gap-48 xl:gap-64`],
+    ['f-py-5xl', 'pt-144 pb-144 md:!pt-160 md:pb-160'],
+
   ],
   variants: [
     // TODO Move variants to onmaxPreset?
