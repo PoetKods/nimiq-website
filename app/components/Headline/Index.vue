@@ -27,7 +27,7 @@ if (hasLink(cta)) {
     <p v-if="label" mb-16 block w-max nq-label f-text-sm :class="{ 'md:mx-auto': !leftAlign }">
       {{ label }}
     </p>
-    <PrismicText :wrapper="headlineTag" :field="headline" :class="{ 'text-left': leftAlign }" break-keep />
+    <PrismicText :wrapper="headlineTag" :field="headline" class="font-semibold" :class="{ 'text-left': leftAlign }" break-keep />
     <PrismicText v-if="hasText(subline)" wrapper="p" :field="subline" :class="{ 'text-left': leftAlign }" />
 
     <!-- TODO Deprecate this -->
