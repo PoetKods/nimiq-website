@@ -71,12 +71,14 @@ const [DefinePrice, Price] = createReusableTemplate<{ data: [number, number], de
             <NuxtTime :datetime="lastUpdated" year="numeric" month="long" day="numeric" hour="2-digit" minute="2-digit" />
           </div>
         </aside>
-        <div group relative f-pb-xs>
-          <ChartLine :data="historicPrices || []" leader h-full rounded-8>
-            <template #default="{ data: [ts, price] }">
-              <Price :data="[ts, price]" />
-            </template>
-          </ChartLine>
+        <div group relative right-0 w-full f-pb-xs>
+          <div class="chart-container">
+            <ChartLine :data="historicPrices || []" leader h-full rounded-8>
+              <template #default="{ data: [ts, price] }">
+                <Price :data="[ts, price]" />
+              </template>
+            </ChartLine>
+          </div>
 
           <div absolute right-32 top-32>
             <Price transition-opacity leader-hocus:invisible :data="historicPrices?.at(-1) || [0, 0]" :delta-price-one-day="deltaPrice" />
@@ -107,3 +109,9 @@ const [DefinePrice, Price] = createReusableTemplate<{ data: [number, number], de
     </p>
   </div>
 </template>
+
+<style scoped>
+:deep(.chart-container svg) {
+  width: 100% !important;
+}
+</style>
