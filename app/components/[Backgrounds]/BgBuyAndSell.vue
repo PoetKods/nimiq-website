@@ -2,8 +2,8 @@
   <div absolute inset-0 bottom-96 z-2 max-w-none of-hidden f="$top $top-min-80 $top-base-vh $top-max-110">
     <div absolute h-180vh w-screen class="bg-radial" />
     <div absolute bg-gradient-fn="from-neutral-0 ease-in to-$orange to-b" h="$f-top" w-screen />
-    <div absolute bottom-30vh top="$f-top" w-screen bg="$orange" />
-    <div absolute bottom-0 h-30vh w-screen bg-gradient-fn="from-$orange ease-out to-neutral-0 to-b" />
+    <div absolute bottom-20vh top="$f-top" w-screen bg="$orange" />
+    <div absolute bottom-0 h-20vh w-screen bg-gradient-fn="from-$orange ease-out to-neutral-0 to-b" />
   </div>
   <div z-3 v-bind="$attrs">
     <slot />
