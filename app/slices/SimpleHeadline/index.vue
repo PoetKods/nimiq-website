@@ -66,7 +66,7 @@ section:is([bg-neutral-0], .bg-neutral-0):not(
 }
 
 section[bg-neutral-0]:has(+ section[data-slice-type='simple-headline'].bg-neutral-0) {
-  --uno: 'f-pt-5xl';
+  --uno: 'pb-144 md:pb-160 ';
 }
 
 section[data-slice-type='staking-faq'] + section[data-slice-type='simple-headline'] {
