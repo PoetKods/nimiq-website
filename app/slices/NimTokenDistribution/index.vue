@@ -16,8 +16,6 @@ const activeIndexes = computed(() => {
 </script>
 
 <template>
-  {{ selected }}
-  {{ activeIndexes }}
   <section bg-neutral-0>
     <div grid="~ gap-x-6 flow-row gap-y-20" :style="{ gridTemplateColumns, gridTemplateRows: `repeat(${slice.primary.item.length + 1}, auto)` }" w-full>
       <div v-for="({ color }, i) in slice.primary.item" :key="i" :style="`background-image:var(--nq-${color}-gradient)`" h-81 rounded-6 shadow />
