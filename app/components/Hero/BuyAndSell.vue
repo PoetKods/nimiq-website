@@ -11,7 +11,7 @@ const { fiatAmount, cryptoAmount, fiatCurrency } = useSyncAmountInputs()
 </script>
 
 <template>
-  <section relative of-x-clip bg-neutral-0 custom-py-5xl>
+  <section relative of-x-clip bg-neutral-0>
     <BgBuyAndSell w-full>
       <Headline :headline="slice.primary.headline" :subline="slice.primary.subline" />
       <form flex="~ md:row col items-center  gap-x-24" mx-auto mt-40 h-max w-max @submit.prevent>
