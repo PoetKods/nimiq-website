@@ -30,7 +30,7 @@ const isDev = import.meta.dev
 </script>
 
 <template>
-  <section bg-neutral-100>
+  <section bg-neutral-100 f-pt-3xl>
     <div grid="~ cols-1 lg:cols-2 xl:cols-3 gap-16" w-full>
       <article v-for="({ uid, href, draft, image, hasImage, title, abstract, publishDate, authors }, i) in posts" :key="uid" :class="page === 1 ? { 'md:self-end': i === 1, 'md:self-stretch': i > 1, 'md:first:col-span-2': true } : 'self-stretch'">
         <NuxtLink :to="href" relative h-full p-0 nq-hoverable @click="active = uid">
