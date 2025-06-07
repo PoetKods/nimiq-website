@@ -56,9 +56,9 @@ if (hasLink(cta)) {
           />
 
           <PrismicLink
-            v-else-if="link.variant === 'video'" internal-component="a" :field="link" flex="~ gap-12 items-center" hocus:bg="blue/6" un-text-blue rounded-4 p-8 transition-colors
+            v-else-if="link.variant === 'video'" internal-component="a" :field="link" flex="~ gap-12 items-center" un-text-darkblue rounded-4 p-8 transition-colors hover:text-blue
           >
-            <div ring="1.5 blue" size-32 rounded-full text-16 stack>
+            <div ring="1.5 darkblue" size-32 rounded-full text-16 stack>
               <div i-nimiq:triangle-right />
             </div>
             <p font-bold>
